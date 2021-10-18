@@ -1,0 +1,34 @@
+body{
+    background: #000;
+    box-sizing: border-box;
+}
+
+.grid_main{
+    display: grid;
+  
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr))  ;
+    grid-gap: 3px;
+    width: 50vw;
+    height: 50vh;
+    background-color:grey;
+
+
+
+}
+
+.grid_item{
+    border: 2px solid red;
+    padding:5px;
+    color:#fff;
+    background-color: #222;
+    
+    
+}
+
+.rojo{
+    background-color: blue;
+}
+
+.grid_item:first-child{
+    grid-row: 1/3
+}
